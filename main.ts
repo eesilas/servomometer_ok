@@ -1,5 +1,6 @@
 let temp = 0
 microIoT.microIoT_initDisplay()
+microIoT.microIoT_WIFI("EVI-LINKSYS", "88888888")
 basic.showIcon(IconNames.SmallHeart)
 pins.servoWritePin(AnalogPin.P0, 0)
 basic.pause(500)
