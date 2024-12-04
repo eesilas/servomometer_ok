@@ -21,5 +21,10 @@ basic.forever(function () {
         180,
         0
         ))
+        if (input.temperature() >= 28) {
+            microIoT.microIoT_setIndexColor(PIN.P15, 0, 3, 0xff0000)
+        } else {
+            microIoT.microIoT_setIndexColor(PIN.P15, 0, 3, 0x0000ff)
+        }
     }
 })
