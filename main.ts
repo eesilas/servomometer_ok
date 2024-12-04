@@ -3,6 +3,7 @@ basic.showIcon(IconNames.SmallHeart)
 pins.servoWritePin(AnalogPin.P0, 0)
 basic.pause(500)
 pins.servoWritePin(AnalogPin.P0, 180)
+let scale = 180
 basic.forever(function () {
     temp = input.temperature()
     if (temp < 20) {
@@ -15,8 +16,8 @@ basic.forever(function () {
         temp,
         20,
         40,
-        0,
-        180
+        180,
+        0
         ))
     }
 })
