@@ -1,4 +1,5 @@
 let temp = 0
+microIoT.microIoT_initDisplay()
 basic.showIcon(IconNames.SmallHeart)
 pins.servoWritePin(AnalogPin.P0, 0)
 basic.pause(500)
