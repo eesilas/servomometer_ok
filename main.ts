@@ -12,6 +12,7 @@ basic.forever(function () {
         temp = 40
     } else {
         basic.showString("" + (input.temperature()))
+        microIoT.microIoT_showUserNumber(1, input.temperature())
         pins.servoWritePin(AnalogPin.P0, pins.map(
         temp,
         20,

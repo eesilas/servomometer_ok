@@ -5,7 +5,8 @@
     "dependencies": {
         "core": "*",
         "radio": "*",
-        "microphone": "*"
+        "microphone": "*",
+        "microIoT": "github:DFRobot/pxt-DFRobot-microIoT#v1.3.0"
     },
     "files": [
         "main.blocks",
